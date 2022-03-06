@@ -1,0 +1,64 @@
+.container {
+    display: grid;
+    grid-template: 1fr 10fr / 1fr 8fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sidebar {
+    background-color: #3399ee;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+    color: white;
+}
+
+.logo {
+
+}
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template: 1fr 1fr / 70% 30%;
+    padding: 1%;
+    box-shadow: 10px 5px 5px red;
+}
+
+.header input {
+    background-color: #dddddd;
+    border-radius: 5px;
+}
+
+.headButtons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    background-color: #cccccc;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 5% repeat(4, 1fr);
+    padding: 1.5% 1%;
+    gap: 15px;
+}
+
+.cards {
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 3px black;
+}
