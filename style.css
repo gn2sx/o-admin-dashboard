@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
     display: grid;
     grid-template: 1fr 10fr / 1fr 8fr;
@@ -13,11 +17,30 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 15px;
+    gap: 4%;
     color: white;
 }
 
 .logo {
 
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    gap: 12px;
+}
+
+.menu div div {
+    padding-top: 5%;
+}
+
+.upperMenu {
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.lowerMenu {
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .header {
@@ -26,12 +49,13 @@
     display: grid;
     grid-template: 1fr 1fr / 70% 30%;
     padding: 1%;
-    box-shadow: 10px 5px 5px red;
+    box-shadow: 0px 2px 5px red;
 }
 
 .header input {
     background-color: #dddddd;
     border-radius: 5px;
+    width: 70%;
 }
 
 .headButtons {
@@ -44,7 +68,8 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    overflow: auto;
+    grid-template-columns: 4fr 1fr;
     grid-template-rows: 5% repeat(4, 1fr);
     padding: 1.5% 1%;
     gap: 15px;
@@ -54,7 +79,8 @@
     grid-column: 1 / 2;
     grid-row: 2 / 5;
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(100px , 1fr)); 
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
     gap: 20px;
 }
 
