@@ -10,7 +10,7 @@
 }
 
 .sidebar {
-    background-color: #3399ee;
+    background-color: #0284C7;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: flex;
@@ -19,6 +19,11 @@
     padding: 15px;
     gap: 4%;
     color: white;
+}
+
+/* Make the SVGs white */
+.sidebar img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(103%) contrast(101%);
 }
 
 .logo {
@@ -53,7 +58,7 @@
 }
 
 .header input {
-    background-color: #dddddd;
+    background-color: #E2E8F0;
     border-radius: 5px;
     width: 70%;
 }
@@ -64,7 +69,7 @@
 }
 
 .content {
-    background-color: #cccccc;
+    background-color: #E2E8F0;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
